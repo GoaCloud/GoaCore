@@ -49,7 +49,7 @@ RUN CGO_ENABLED=0 GOOS=${TARGETOS:-linux} GOARCH=${TARGETARCH:-amd64} go build -
 # alpine:3.24 — version reprise de main (bump Dependabot), mais épinglée par
 # digest comme le reste : un tag reste mouvant, et deux builds du même commit
 # doivent produire le même binaire.
-FROM alpine@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
+FROM alpine@sha256:294b683cb724975bec92580e1e685676bd4b50bda910ddb8c51d4cabeaec77e6
 
 WORKDIR /app
 
